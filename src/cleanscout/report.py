@@ -5,7 +5,7 @@ def generate_report_html(df: pd.DataFrame, outdir: str, title: str = "Cleanscout
     os.makedirs(outdir, exist_ok=True)
 
     # Lazy, optional import — avoids IDE “unresolved” at module import time
-    # ProfileReport = None
+    ProfileReport = None
     try:
         from ydata_profiling import ProfileReport  # type: ignore
     except Exception:
