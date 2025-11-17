@@ -1,0 +1,18 @@
+[project]
+name = "cleanscout"
+version = "0.1.0"
+description = "Simple data cleaning + EDA toolkit with optional HTML report (no modeling pipeline; leakage-safe topics separate)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name="Richard Akindele", email="RichardAkindele8@gmail.com"}]
+dependencies = ["pandas>=2.0.0","numpy>=1.24.0","matplotlib>=3.7.0"]
+
+[project.optional-dependencies]
+report = ["ydata-profiling>=4.6.0"]
+viz = ["missingno>=0.5.2"]
+all = ["ydata-profiling>=4.6.0","missingno>=0.5.2"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
