@@ -1,7 +1,7 @@
 # cleanscout
 
 **cleanscout** is a tiny, reusable toolkit for **data cleaning + quick EDA**.  
-It deliberately excludes modeling/pipelines so you can learn **leakage-safe** preprocessing later.
+It deliberately excludes modeling/pipelines.
 
 ## Install (editable for local dev)
 ```bash
