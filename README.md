@@ -7,7 +7,6 @@ It deliberately excludes modeling/pipelines.
 ```bash
 pip install -U pip build
 pip install -e .
-# optional extras
 pip install 'ydata-profiling>=4.6.0'
 ```
 
